@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faPlaneDeparture } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-banner-promociones',
@@ -8,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class BannerPromocionesComponent implements OnInit {
   descuento: number = 5;
   imagenAvion: string = 'assets/avion2.eps'; // Ruta de la imagen de avión
+  planeDeparture = faPlaneDeparture
 
   ngOnInit() {
     // Generar un porcentaje aleatorio entre 5% y 10%

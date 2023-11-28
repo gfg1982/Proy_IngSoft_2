@@ -14,7 +14,7 @@ interface formaVuelos {
 })
 export class ReservasComponent {
 
-  public date: Date = new Date(2018, 0O5, 0O5, 17, 23, 42, 11);  
+  public date: Date = new Date(2018, 0O5, 0O5, 17, 23, 42, 11);
   public vuelos: formaVuelos[] = [
     {
       "aereolinea": "Avianca",
@@ -26,24 +26,24 @@ export class ReservasComponent {
       "aereolinea": "Latam",
       "horaSalida": new Date('December 1, 2023 12:00:00'),
       "horaLlegada": new Date('December 1, 2023 13:15:00'),
-      "precio": "100000"
+      "precio": "120000"
     },
     {
       "aereolinea": "Viva Air",
       "horaSalida": new Date('December 1, 2023 21:40:00'),
       "horaLlegada": new Date('December 1, 2023 22:30:00'),
-      "precio": "100000"
+      "precio": "115000"
     }
   ]
 
   constructor(
     private router: Router
-    ) { }
+  ) { }
 
   ngOnInit() {
   }
 
-  reservar(index: number){
+  reservar(index: number) {
     this.router.navigate(['formulario']);
   }
 

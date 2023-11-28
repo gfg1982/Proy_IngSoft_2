@@ -28,9 +28,9 @@
                                 <label for="pais" class="form-label">Pais de residencia</label>
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Seleccionar</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option [value]="1">One</option>
+                                    <option [value]="2">Two</option>
+                                    <option [value]="3">Three</option>
                                 </select>
                             </div>
                         </div>
@@ -39,9 +39,9 @@
                                 <label for="tipoDoc" class="form-label">Tipo de Documento</label>
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Seleccionar</option>
-                                    <option value="1">Cedula de Ciudadanía</option>
-                                    <option value="2">Tarjeta de Identidad</option>
-                                    <option value="3">Pasaporte</option>
+                                    <option [value]="1">Cedula de Ciudadanía</option>
+                                    <option [value]="2">Tarjeta de Identidad</option>
+                                    <option [value]="3">Pasaporte</option>
                                 </select>
                             </div>
                             <div class="col-md-6" style="padding: 1%">
@@ -74,9 +74,9 @@
                             <label for="tipoDoc" class="form-label">Numero de Contacto</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Seleccionar</option>
-                                <option value="1">+ 05</option>
-                                <option value="2">+ 57</option>
-                                <option value="3">+ 60</option>
+                                <option [value]="1">+ 05</option>
+                                <option [value]="2">+ 57</option>
+                                <option [value]="3">+ 60</option>
                             </select>
                         </div>
                         <div class="col-md-4" style="padding: 1%">
@@ -98,8 +98,43 @@
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                 <div class="accordion-body">
+                    <div class="col-md-6" style="padding: 1%">
+                        <h4>Ingresa los datos de la tarjeta</h4>
+                    </div>
+                    <div class="col-md-12" style="display:flex">
+                        <div class="col-md-6" style="padding: 1%">
+                            <label for="numeroT" class="form-label">Número de la tarjeta</label>
+                            <input type="number" class="form-control" id="numeroT"
+                                placeholder="Como figura en la tarjeta">
+                        </div>
+                        <div class="col-md-6" style="padding: 1%">
+                            <label for="nombreT" class="form-label">Titular de la tarjeta</label>
+                            <input type="text" class="form-control" id="nombreT"
+                                placeholder="Como figura en la tarjeta">
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="display:flex">
+                        <div class="col-md-3" style="padding: 1%">
+                            <label for="numeroT" class="form-label">Vencimiento</label>
+                            <input type="text" class="form-control" id="numeroT"
+                                placeholder="MM/YY">
+                        </div>
+                        <div class="col-md-3" style="padding: 1%">
+                            <label for="nombreT" class="form-label">Cód. Seguridad</label>
+                            <input type="text" class="form-control" id="nombreT"
+                                placeholder="CVV">
+                        </div>
+                        <div class="col-md-6" style="padding: 1%">
+                            <label for="nombreT" class="form-label">Documento del titular de la tarjeta</label>
+                            <input type="number" class="form-control" id="nombreT"
+                                placeholder="Como figura en la tarjeta">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div style="text-align:center; padding:2%;">
+        <button type="button" class="btn btn-outline-primary" (click)="guardar()">Guardar</button>
     </div>
 </div>

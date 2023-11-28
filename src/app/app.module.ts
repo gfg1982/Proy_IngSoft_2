@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BannerPromocionesComponent } from './banner-promociones/banner-promociones.component';
 import { ReservasComponent } from './reservas/reservas.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormularioReservasComponent } from './formulario-reservas/formulario-reservas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BannerPromocionesComponent,
-    ReservasComponent
+    ReservasComponent,
+    FormularioReservasComponent
   ],
   imports: [
     BrowserModule,
